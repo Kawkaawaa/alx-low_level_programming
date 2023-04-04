@@ -8,5 +8,6 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbk(char *s, char *accept);
 char *_strstr(char *haysack, char *needle);
 void print_chessboard(char (*a)[8]);
+void print_diagsums(int *a, int size);
 
 #endif
