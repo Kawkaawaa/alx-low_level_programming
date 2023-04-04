@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*8
+/**
  * _strstr - function locate
  * @haystack: pointer to char
  * @needle: pointer to char
@@ -22,7 +22,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (!*needle)
 		{
-			return (result)
+			return (result);
 		}
 		needle = fneedle;
 		result++;
