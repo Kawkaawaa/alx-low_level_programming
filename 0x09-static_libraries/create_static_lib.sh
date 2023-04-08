@@ -1,5 +1,5 @@
 #!/bin/bash
-#create a create_static_lib.sh 
+#create create_static_lib.sh 
 #create an object file for each .c file in the current directory
 C_FILES=$(find . -maxdepth 1 -type f -name "*.c")
 #create a static library from all the object files
