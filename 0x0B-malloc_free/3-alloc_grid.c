@@ -7,7 +7,7 @@
  * @width: the width of the array
  * @height: the height of the array
  *
- * Return : a pointer to the array or NULL on failure
+ * Return: a pointer to the array or NULL on failure
  */
 int **alloc_grid(int width, int height)
 {
