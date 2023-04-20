@@ -20,13 +20,13 @@ void print_all(const char * const format, ...)
 			switch (format[i])
 			{
 				case 'c':
-					prnyf("%s%c", sep, va_arg(list, int));
+					printf("%s%c", sep, va_arg(list, int));
 					break;
 				case 'i':
-					printf("%s$d", sep, va_arg(list, int));
-					case 'f';
+					printf("%s%d", sep, va_arg(list, int));
+				case 'f':
 					printf("%s%f", sep, va_arg(list, double));
-break:
+					break;
 				case 's':
 					str = va_arg(list, char *);
 					if (!str)
