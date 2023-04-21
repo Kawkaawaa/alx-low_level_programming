@@ -4,23 +4,23 @@
  * print_numbers - prints numbers given as parameters
  * @separator: string to be printed betweem numbers
  * @n: number of inregers passed to the function
+ * @...: the integers to print
+ *
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	unsigned int i;
-	va_list list;
+	int i = n;
+	va_list ap;
 
-	for (i = 0; i < n; i++)
+	if (!n)
 	{
-		if (!separator)
-			printf("%d", va_arg(list, int));
-		else if (separator && i == 0)
-			printf("%d", va_arg(list, int));
-		else
-			printf("%s%d", separator, va_arg(list, int));
+		printf("\n");
+		return;
 	}
-
-	va_end(list);
-
-	printf("\n");
+	va_start(ap, n);
+	while (i--)
+		printf("%d%s", va_arg(ap, int),
+			i ? (separator ? separator : "") : "\n");
+	va_end(ap);
 }
