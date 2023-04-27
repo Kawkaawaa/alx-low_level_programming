@@ -28,3 +28,4 @@ list_t *add_node(**head, const char *str)
 
 	return (*head);
 }
+
